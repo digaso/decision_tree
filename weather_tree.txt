@@ -1,0 +1,21 @@
+Decision Tree:
+Temp:
+  <= 84.0:
+    Humidity:
+      <= 88.0:
+        Weather:
+          overcast: yes  (3)
+          rainy:
+            Windy:
+              <= 0.5: yes  (2)
+              > 0.5: no  (1)
+          sunny: yes  (2)
+      > 88.0:
+        Weather:
+          sunny: no  (2)
+          rainy:
+            Windy:
+              <= 0.5: yes  (1)
+              > 0.5: no  (1)
+          overcast: yes  (1)
+  > 84.0: no  (1)

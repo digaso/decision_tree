@@ -1,0 +1,19 @@
+Decision Tree:
+petallength:
+  <= 2.45: Iris-setosa  (50)
+  > 2.45:
+    petalwidth:
+      <= 1.75:
+        sepallength:
+          <= 7.1:
+            sepalwidth:
+              <= 2.85: Iris-versicolor  (31)
+              > 2.85: Iris-versicolor  (22)
+          > 7.1: Iris-virginica  (1)
+      > 1.75:
+        sepallength:
+          <= 5.95:
+            sepalwidth:
+              <= 3.1: Iris-virginica  (6)
+              > 3.1: Iris-versicolor  (1)
+          > 5.95: Iris-virginica  (39)

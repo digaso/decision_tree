@@ -92,7 +92,7 @@ def entropy(examples, label, possible_labels):
             label_prob = number_label_cases / number_rows
             label_entropy = -(label_prob * np.log2(label_prob))
         entropy_value += label_entropy
-    return entropy_value
+    return round(entropy_value, 4)
 
 
 def info_gain(attribute, examples, label, possible_labels):
@@ -116,11 +116,6 @@ def info_gain(attribute, examples, label, possible_labels):
 
 
 def most_info_gain(examples, label, possible_labels, possible_attributes):
-    """
-    Determines the attribute that results in the most information gain
-    :param possible_attributes: List of all possible attributes
-    :return: The attribute that results in the most information gain
-    """
     max_info_gain = -1
     max_info_attribute = None
 
@@ -176,7 +171,7 @@ def calculate_best_split_value(examples, attribute, label, possible_labels):
             best_information_gain = information_gain
             best_split_value = value
 
-    return best_split_value
+    return round(best_split_value, 2)
 
 
 def generate_branch(attribute, examples, label, possible_labels, parent_examples):

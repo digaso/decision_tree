@@ -1,0 +1,16 @@
+Decision Tree:
+Pat:
+  Some: Yes  (4)
+  Full:
+    Hun:
+      Yes:
+        Type:
+          Thai:
+            Fri:
+              No: No  (1)
+              Yes: Yes  (1)
+          Italian: No  (1)
+          Burger: Yes  (1)
+          French: No  (0)
+      No: No  (2)
+  nan: Yes  (0)
