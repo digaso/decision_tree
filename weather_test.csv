@@ -1,0 +1,4 @@
+ID,Weather,Temp,Humidity,Windy,Play
+1,sunny,65,80,FALSE,no
+2,overcast,71,99,TRUE,yes
+3,rainy,60,65,FALSE,no
